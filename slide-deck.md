@@ -9,6 +9,7 @@ _paginate: false
 
 ![alt](/images/bg-gif.gif)
 
+[Slides Live](https://state-management-blubito-meeting.netlify.app/)
 [Slides Repo](https://github.com/simeon-petrov-5/state-management-blub-meet)
 
 ----------
