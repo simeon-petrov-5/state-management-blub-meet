@@ -7,7 +7,7 @@ _paginate: false
 
 # State Management
 
-![alt](images/bg-gif.gif)
+![alt](/images/bg-gif.gif)
 
 [Slides Repo](https://github.com/simeon-petrov-5/state-management-blub-meet)
 
