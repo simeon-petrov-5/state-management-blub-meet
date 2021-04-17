@@ -1,0 +1,32 @@
+{
+  "name": "workshop-state-management",
+  "version": "1.0.0",
+  "description": "These are the resources for a workshop done for my company at the time Blubito AG. You can use these examples however you desire and keep in mind that these workshops are based on my current/specific/limited/updated knowledge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simeon-petrov-5/state-management-blub-meet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simeon-petrov-5/state-management-blub-meet/issues"
+  },
+  "homepage": "https://github.com/simeon-petrov-5/state-management-blub-meet#readme",
+  "scripts": {
+    "build": "rimraf dist && npm run -s og-image && npm run -s deck",
+    "deck": "marp --no-stdin slide-deck.md -o dist/index.html && cpy \"assets/**/*\" dist/assets",
+    "now-build": "npm run -s deck",
+    "og-image": "marp slide-deck.md -o dist/og-image.jpg",
+    "start": "marp -ps ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@marp-team/marp-cli": "^0.23.3",
+    "cpy-cli": "^3.1.1",
+    "rimraf": "^3.0.2"
+  }
+}

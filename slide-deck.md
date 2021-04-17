@@ -9,7 +9,7 @@ _paginate: false
 
 ![alt](images/bg-gif.gif)
 
-[text](https://link)
+[Slides Repo](https://github.com/simeon-petrov-5/state-management-blub-meet)
 
 ----------
 
