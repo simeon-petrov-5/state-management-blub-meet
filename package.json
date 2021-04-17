@@ -18,7 +18,7 @@
   "homepage": "https://github.com/simeon-petrov-5/state-management-blub-meet#readme",
   "scripts": {
     "build": "rimraf dist && npm run -s og-image && npm run -s deck",
-    "deck": "marp --no-stdin slide-deck.md -o dist/index.html && cpy \"assets/**/*\" dist/assets",
+    "deck": "marp --no-stdin slide-deck.md -o dist/index.html && cpy \"images/**/*\" dist/images",
     "now-build": "npm run -s deck",
     "og-image": "marp slide-deck.md -o dist/og-image.jpg",
     "start": "marp -ps ."
