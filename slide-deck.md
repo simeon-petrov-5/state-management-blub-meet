@@ -9,8 +9,7 @@ _paginate: false
 
 ![alt](/images/bg-gif.gif)
 
-[Slides Live](https://state-management-blubito-meeting.netlify.app/)
-[Slides Repo](https://github.com/simeon-petrov-5/state-management-blub-meet)
+[Slides Live](https://state-management-blubito-meeting.netlify.app/) | [Slides Repo](https://github.com/simeon-petrov-5/state-management-blub-meet)
 
 ----------
 
@@ -35,15 +34,13 @@ On today's news
 BTW did I mentioned that it depends on ...
 ```
 
-TL:DR - Almost everything depends on the situation and I woudn't say this is set in stone. 
-
-Please note that some of the code snippets aren't implementation-wise... correct, they're used for showing an example. Also the examples will be mainly with Vue + Vuex or React.
+TL;DR - Almost everything depends on the situation and I woudn't say this is set in stone.
 
 ----------
 
 # State? Local? Global?
 
-![m](./images/Local_vs_global.png)
+![Local_vs_global](./images/Local_vs_global.png)
 
 ----------
 
@@ -65,7 +62,7 @@ Let's say we have a form for registering new users with 3 specific steps one aft
 ----------
 
 # Local State Usage - Nested level
-![Local_Same_Level]('./../images/Local_Nested.png)
+![Local_Nested]('./../images/Local_Nested.png)
 
 ----------
 
@@ -79,14 +76,14 @@ Let's say we have a form for registering new users with 3 specific steps one aft
 
 # Global State Usage
 
-![alt](images/Store_Global_Components.png)
+![Store_Global_Components](images/Store_Global_Components.png)
 
 
 ----------
 
 ### Global State Usage
 
-![alt](images/Store_Multiple_Components.png)
+![images/Store_Multiple_Components](images/Store_Multiple_Components.png)
 
 ----------
 
@@ -262,7 +259,4 @@ Modules that actually do that and handle all that additional bloatware
 
 [Managing React Application State Management - Talk by Kent C. Dodds](https://www.youtube.com/watch?v=zpUMRsAO6-Y)
 [How I Manage State in React - Leigh Halliday](https://www.youtube.com/watch?v=FzlurzsCW4M)
-[text]()
-[text]()
-[text]()
-[text]()
+[React Apollo State Management Best Practices -  Ben Awad](https://www.youtube.com/watch?v=N2q-ZYuQWI8)

@@ -1,21 +1,24 @@
 {
   "name": "workshop-state-management",
   "version": "1.0.0",
-  "description": "These are the resources for a workshop done for my company at the time Blubito AG. You can use these examples however you desire and keep in mind that these workshops are based on my current/specific/limited/updated knowledge.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/simeon-petrov-5/state-management-blub-meet#readme",
+  "description": "Slides for internall meeting about state management systems and when/how to use them.",
+  "keywords": [
+    "javascript",
+    "learning",
+    "state",
+    "state management",
+    "meeting"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/simeon-petrov-5/state-management-blub-meet.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/simeon-petrov-5/state-management-blub-meet/issues"
+  "author": {
+    "name": "Simeon Petrov",
+    "url": "https://github.com/simeon-petrov-5"
   },
-  "homepage": "https://github.com/simeon-petrov-5/state-management-blub-meet#readme",
+  "license": "MIT",
   "scripts": {
     "build": "rimraf dist && npm run -s og-image && npm run -s deck",
     "deck": "marp --no-stdin slide-deck.md -o dist/index.html && cpy \"images/**/*\" dist/images",
