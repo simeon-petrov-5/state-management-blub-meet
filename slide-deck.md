@@ -17,9 +17,9 @@ _paginate: false
 # State Management
 
 On today's news
-- What's state ? What's global state || state management tool ?
+- What's state? What's global state || state management tool?
 - Local vs Global state (when to actually use it)?
-- How to keep it managable ?
+- How to keep it manageable?
 - But the data cache ... 
 
 ----------
@@ -31,7 +31,7 @@ On today's news
 
 
 ```
-BTW did I mentioned that it depends on ...
+BTW did I mention that it depends on ...
 ```
 
 TL;DR - Almost everything depends on the situation and I woudn't say this is set in stone.
@@ -43,13 +43,21 @@ TL;DR - Almost everything depends on the situation and I woudn't say this is set
 ![Local_vs_global](./images/Local_vs_global.png)
 
 ----------
+# Some of the more "less positive" experience
+
+Often, I've seen people using global state to store stuff that don't need to be stored there. Such like:
+
+- Storing the data from the server (sometimes also trying to cache it)
+- Storing ALL the state of the app
+- Gathering everything in a single store
+----------
 
 # Local State Usage
 - Page loading
 - Different components loading state
 - Data lists
 - Expanded state
-- More or less everything can be here.
+- More or less, everything can be here.
 
 ----------
 
@@ -99,53 +107,13 @@ Whenever ...
 ### But please, please, please don't fall in the rabbit hole of premature-optimisation.
 
 ----------
-
 # But how to actually ... use it.
 
-It's kinda simple
-1. Modules
-2. Getter & Setter
-
+It's kind of simple
+1. Getter & Setter
+2. Modules
 ----------
-
-# 1. Modules
-
-Split stores into modules
-- Easier to work with & maintain
-- Lazy Loading / Code Splitting / Performance
-
-### Example structure
-```
-├── store
-│   ├── index.js // The entry point for all stores
-│   ├── users.js
-│   ├── calendar.js
-│   └── notifications.js
-```
-
-----------
-
-# 1.1. Module Implementation
-
-### Admin.vue
-```
-import adminModule from './admin.js'
-
-export default { 
-  mounted () { 
-    this.$store.registerModule('admin', adminModule)
-  },
-  beforeDestroy () {
-   this.$store.unregisterModule('admin')
-  }
-}
-```
-
-[Vue.js App Performance Optimization: part 3— Lazy loading Vuex modules](https://itnext.io/vue-js-app-performance-optimization-part-3-lazy-loading-vuex-modules-ed67cf555976)
-
-----------
-
-# 2. Getter & Setter
+# 1. Getter & Setter
 
 - No direct manipulation/assigning to the variable
 - Easy to trace & debug
@@ -153,8 +121,7 @@ export default {
 ![alt](images/getter_setter.png)
 
 ----------
-
-# 2.1. Getter & Setter - Implementation
+# 1.1. Getter & Setter - Implementation
 
 ```
 export default {
@@ -182,10 +149,8 @@ export default {
     }
 }
 ```
-
 ----------
-
-# 2.2. Getter & Setter - In component
+# 1.2. Getter & Setter - In component
 
 ```
 methods: {
@@ -206,13 +171,44 @@ methods: {
   }
 }
 ```
-
 ----------
-
-# 2.3. Easy to debug
+# 1.3. Easy to debug
 
 ![alt](https://i2.wp.com/www.collegestash.com/wp-content/uploads/2017/09/vuex.png?ssl=1)
 
+----------
+# 2. Modules
+
+Split stores into modules
+- Easier to work with & maintain
+- Lazy Loading / Code Splitting / Performance
+
+### Example structure
+```
+├── store
+│   ├── index.js // The entry point for all stores
+│   ├── users.js
+│   ├── calendar.js
+│   └── notifications.js
+```
+----------
+
+# 2.1. Module Implementation
+### Admin.vue
+```
+import adminModule from './admin.js'
+
+export default { 
+  mounted () { 
+    store.registerModule('admin', adminModule)
+  },
+  beforeDestroy () {
+    store.unregisterModule('admin')
+  }
+}
+```
+
+[Vue.js App Performance Optimization: part 3— Lazy loading Vuex modules](https://itnext.io/vue-js-app-performance-optimization-part-3-lazy-loading-vuex-modules-ed67cf555976)
 
 ----------
 
@@ -248,7 +244,7 @@ Modules that actually do that and handle all that additional bloatware
 
 # Recap
 
-- Kepp it simple and don't overuse it
+- Keep it simple and don't overuse it
 - Whenever you need a store - use it
 - Whenever a local state is enough - it's more than enough
 - Use things as they're intended
