@@ -9,7 +9,7 @@ _paginate: false
 
 ![alt](/images/bg-gif.gif)
 
-[Slides Live](https://state-management-blubito-meeting.netlify.app/) | [Slides Repo](https://github.com/simeon-petrov-5/state-management-blub-meet)
+[Slides Live](https://state-management-meeting.netlify.app/) | [Slides Repo](https://github.com/simeon-petrov-5/state-management-meeting)
 
 ----------
 
@@ -209,6 +209,15 @@ export default {
 ```
 
 [Vue.js App Performance Optimization: part 3— Lazy loading Vuex modules](https://itnext.io/vue-js-app-performance-optimization-part-3-lazy-loading-vuex-modules-ed67cf555976)
+
+----------
+
+# persist or "cache data" with a store
+
+Depends on what you want to achieve, how importand and dynamic the data is and what workflow we have.
+
+![Store_caching](images/Store_caching.png)
+
 
 ----------
 

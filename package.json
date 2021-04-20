@@ -1,7 +1,7 @@
 {
   "name": "workshop-state-management",
   "version": "1.0.0",
-  "homepage": "https://github.com/simeon-petrov-5/state-management-blub-meet#readme",
+  "homepage": "https://github.com/simeon-petrov-5/state-management-meeting",
   "description": "Slides for internal meeting about state management systems and when/how to use them.",
   "keywords": [
     "javascript",
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simeon-petrov-5/state-management-blub-meet.git"
+    "url": "git+https://github.com/simeon-petrov-5/state-management-meeting.git"
   },
   "author": {
     "name": "Simeon Petrov",
