@@ -43,6 +43,18 @@ TL;DR - Almost everything depends on the situation and I woudn't say this is set
 ![Local_vs_global](./images/Local_vs_global.png)
 
 ----------
+
+# The libraries
+
+### Redux, MobX, Zustand, Recoil, XState/State Machines, Vuex ....
+----------
+
+# Probably you don't even need it
+
+## React Context API
+
+## Vue Composition API
+----------
 # Some of the more "less positive" experience
 
 Often, I've seen people using global state to store stuff that don't need to be stored there. Such like:
